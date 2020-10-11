@@ -29,11 +29,11 @@ input, button {
   border: none;
   border-bottom: 1px solid indianred;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 23px;
+  outline: none;
 }
 
 input {
-  outline: none;
   margin-right: 10px;
 }
 
@@ -43,4 +43,9 @@ button {
 
 button:hover {
   background: indianred;
+}
+
+ul li {
+  padding: 20px 0;
+  font-size: 20px;
 }
