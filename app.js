@@ -1,18 +1,16 @@
-const form = document.querySelector('form');
 const input = document.querySelector('input');
+const ul = document.createElement('ul');
 
 
-addTask = (e) => {
-    e.preventDefault();
+const addTask = (inputValue) => {
     const titleTask =  input.value;
-    const ul = document.createElement('ul');
     const li = document.createElement('li');
+    if (titleTask === '') return ;
     ul.appendChild(li);
     document.body.appendChild(ul);
     li.textContent =  titleTask;
     input.value = "";
-
 }
 
-form.addEventListener('submit', addTask)
+input.addEventListener('input', addTask)
 
